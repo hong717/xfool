@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,
+          user-scalable=no,minimum-scale=1,maximum-scale=1"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <title id="appTitle">联系客服</title>
+
+    <!-- build:css ../css/index.min.css?v=-->
+
+    <link href="../css/base.css?v=449" rel="stylesheet"/>
+    <link href="../css/common.css?v=449" rel="stylesheet"/>
+    <link href="../css/ctrl.css?v=449" rel="stylesheet"/>
+    <link href="../css/icons.css?v=449" rel="stylesheet"/>
+
+    <link href="../css/allviews.css?v=449" rel="stylesheet"/>
+
+    <!-- endbuild -->
+
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 640) {
+            deviceWidth = 640;
+        }
+        document.documentElement.style.fontSize = deviceWidth / 6.4 + "px";
+        window.onresize = function () {
+            var deviceWidth = document.documentElement.clientWidth;
+            if (deviceWidth > 640) {
+                deviceWidth = 640;
+            }
+            document.documentElement.style.fontSize = deviceWidth / 6.4 + "px";
+        };
+    </script>
+
+</head>
+<body>
+
+
+
+<include src="../html/all.html"/>
+
+
+<script src="../js/sea.js"></script>
+
+
+<script>
+    var versionId = '20168771563366737';
+    var buildid = document.getElementById('kdbuildDate');
+    if (buildid) {
+        versionId = buildid.getAttribute('kdbuildDate');
+    }
+    seajs.config({
+        alias: {
+            'jquery': 'lib/jquery2.1.1'
+        },
+        map: [
+            ['.css', '.css?v=' + versionId],
+            ['.js', '.js?v=' + versionId],
+            [ /^(.*\/app\/xxx\/.*\.(?:css|js))(?:.*)$/i, '$1?' + versionId ]
+        ]
+    });
+    seajs.use(['../js/index'], function (init) {
+    });
+
+</script>
+
+<script type="text/javascript" src="http://pingjs.qq.com/h5/stats.js" name="MTAH5" sid="500141952" ></script>
+
+</body>
+</html>

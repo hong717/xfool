@@ -1,0 +1,27 @@
+body {
+    font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+/*    overflow: hidden;*/
+    font-style: normal;
+    margin: 0;
+}
+
+body ol,
+body ul {
+    margin: 0;
+    padding: 0;
+/*    overflow: hidden;*/
+    list-style-type: none;
+}
+
+body ol li,
+body ul li {
+    list-style: none;
+}
+
+body p {
+    margin: 0;
+}
+
+body a {
+    outline: none;
+}

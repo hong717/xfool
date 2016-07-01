@@ -1,0 +1,171 @@
+<div id="xctrl-loading" class="xctrl-loading" style=" display: none; ">
+    <div class="loading-box">
+        <div class="spinner">
+            <div class="spinner-container container1">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+            </div>
+            <div class="spinner-container container2">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+            </div>
+            <div class="spinner-container container3">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+            </div>
+        </div>
+        <div class="loading-text">正在努力加载...</div>
+    </div>
+</div>
+
+
+
+<div id="xapp-menu" class="xctrl-tab" style="display: none" >
+    <!-- vsale类表示微商城，vstore表示微门店，vcrm表示微CRM，me表示我 end -->
+    <ul data-cmd="menu" class="tab-ul">
+        <!-- <li data-index={index} class="tab-li {cname}">{name}
+            <span data-cmd="num" class="count">0</span>
+        </li>-->
+    </ul>
+</div>
+
+
+<div id="xctrl-toast" class="xctrl-toast" style="display: none;">
+    <span></span>
+</div>
+
+
+
+
+    <div id="viewid-chat-group" class="view-chat-group"  style="display: none">
+        <div>
+            <ul id="viewid-chat-group-list" class="chat-list">
+<!--                <li data-cmd=chat data-index={index}  data-groupid={groupid}>
+                    <img class="image" src="{img}" />
+                    <p class="name">{name}<span class="time">{time}</span></p>
+                    <p data-msg="" class="word">{msg}</p>
+                    <span data-cmd="alert" class=""></span>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+
+
+<div id="viewid-chat" class="view-chat" style="display: none">
+    <div   >
+        <div class="container">
+            <ul id="viewid-chat-list" class="chat-info">
+                <!--me
+                    <li class="me">
+                        <img src="{img}"/>
+                        <p>{msg}<span data-id={sendid} class="hide"><i>!</i></span></p>
+                    </li>
+                me-->
+
+                <!--other
+                    <li class="other">
+                        <img src="{img}"/>
+                        <span class="nickname">{nick}</span>
+                        <p>{msg}</p>
+                    </li>
+                other-->
+
+                <!--time
+                    <li class="time"><span>{time}</span></li>
+                time-->
+
+                <!--goods
+                    <li class="goods">
+                        <div>
+                            <div class="image">
+                                <img src="{img}"/>
+                            </div>
+                            <div class="right">
+                                <div class="detail">
+                                    <p class="name">{name}</p>
+                                    <p class="price">￥{price}</p>
+                                    <p>规格：{model}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                goods-->
+            </ul>
+        </div>
+    </div>
+    <form class="chat-window">
+        <textarea id="viewid-chat-msg" class="message"></textarea>
+        <span id="viewid-chat-send" data-cmd="send">发送</span>
+    </form>
+</div>
+
+
+<div id="viewid-pc-chat" class="view-pc-chat" style="display: none">
+    <div class="title">联系客服</div>
+    <div class="container">
+        <ul id="viewid-pc-chat-group" class="left">
+<!--            <li data-cmd="group" data-index={index} data-groupid={groupid}>
+                <img class="image" src="{img}" />
+                <p class="name">{name}</p>
+                <p data-msg=""class="word">{msg}</p>
+                <span data-cmd="alert" class=""></span>
+            </li>-->
+        </ul>
+
+        <div class="right">
+            <ul id="viewid-pc-chat-list" class="chat-info">
+
+                <!--time
+                    <li class="time"><span>{time}</span></li>
+                time-->
+
+                <!--me
+                    <li class="me">
+                        <img src="{img}"/>
+                        <p>{msg}<span data-id={sendid} class="hide"><i>!</i></span></p>
+                    </li>
+                me-->
+
+                <!--other
+                    <li class="other">
+                        <img src="{img}"/>
+                        <span class="nickname">{nick}</span>
+                        <p>{msg}</p>
+                    </li>
+                other-->
+
+                <!--goods
+                    <li class="goods">
+                        <div>
+                            <div class="image">
+                                <img src="{img}"/>
+                            </div>
+                            <div class="gright">
+                                <div class="detail">
+                                    <p class="name">{name}</p>
+                                    <p class="price">￥{price}</p>
+                                    <p>规格：{model}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                goods-->
+
+            </ul>
+            <div class="bottom">
+                <textarea id="viewid-pc-chat-msg"></textarea>
+                <div class="send">
+                    快捷键：换行(Shift+回车), 发送(Ctrl+回车或回车)
+                    <button data-cmd="send">发送</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
